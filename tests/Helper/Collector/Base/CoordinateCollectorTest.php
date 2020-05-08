@@ -36,7 +36,7 @@ use Ivory\GoogleMap\Overlay\Rectangle;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class CoordinateCollectorTest extends \PHPUnit_Framework_TestCase
+class CoordinateCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var CoordinateCollector
@@ -46,7 +46,7 @@ class CoordinateCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->coordinateCollector = new CoordinateCollector(
             new BoundCollector(new GroundOverlayCollector(), new RectangleCollector()),

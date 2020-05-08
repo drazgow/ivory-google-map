@@ -21,7 +21,7 @@ use Ivory\GoogleMap\Overlay\ExtendableInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class BoundRendererTest extends \PHPUnit_Framework_TestCase
+class BoundRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var BoundRenderer
@@ -31,7 +31,7 @@ class BoundRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->boundRenderer = new BoundRenderer(new Formatter());
     }

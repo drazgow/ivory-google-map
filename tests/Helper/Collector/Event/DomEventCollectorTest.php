@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Map;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DomEventCollectorTest extends \PHPUnit_Framework_TestCase
+class DomEventCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DomEventCollector
@@ -28,7 +28,7 @@ class DomEventCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->domEventCollector = new DomEventCollector();
     }

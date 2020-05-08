@@ -25,7 +25,7 @@ use Ivory\GoogleMap\Overlay\Marker;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class SizeCollectorTest extends \PHPUnit_Framework_TestCase
+class SizeCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var SizeCollector
@@ -35,7 +35,7 @@ class SizeCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->sizeCollector = new SizeCollector(
             new InfoWindowCollector($markerCollector = new MarkerCollector()),

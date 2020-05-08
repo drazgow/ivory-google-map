@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Helper\Renderer\Event\DomEventOnceRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DomEventOnceRendererTest extends \PHPUnit_Framework_TestCase
+class DomEventOnceRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DomEventOnceRenderer
@@ -29,7 +29,7 @@ class DomEventOnceRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->domEventOnceRenderer = new DomEventOnceRenderer(new Formatter());
     }

@@ -17,7 +17,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class HelperBuilderTest extends \PHPUnit_Framework_TestCase
+class HelperBuilderTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AbstractHelperBuilder
@@ -27,7 +27,7 @@ class HelperBuilderTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->helperBuilder = $this->createAbstractHelperBuilder();
     }

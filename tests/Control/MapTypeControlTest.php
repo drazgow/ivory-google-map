@@ -19,7 +19,7 @@ use Ivory\GoogleMap\MapTypeId;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MapTypeControlTest extends \PHPUnit_Framework_TestCase
+class MapTypeControlTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MapTypeControl
@@ -29,7 +29,7 @@ class MapTypeControlTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->mapTypeControl = new MapTypeControl();
     }

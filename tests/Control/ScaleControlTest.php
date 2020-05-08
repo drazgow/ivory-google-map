@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Control\ScaleControlStyle;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ScaleControlTest extends \PHPUnit_Framework_TestCase
+class ScaleControlTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ScaleControl
@@ -28,7 +28,7 @@ class ScaleControlTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->scaleControl = new ScaleControl();
     }

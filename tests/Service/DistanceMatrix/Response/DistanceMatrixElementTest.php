@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Service\DistanceMatrix\Response\DistanceMatrixElementStatus;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DistanceMatrixElementTest extends \PHPUnit_Framework_TestCase
+class DistanceMatrixElementTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DistanceMatrixElement
@@ -30,7 +30,7 @@ class DistanceMatrixElementTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->element = new DistanceMatrixElement();
     }

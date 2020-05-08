@@ -22,7 +22,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class HeatmapLayerRendererTest extends \PHPUnit_Framework_TestCase
+class HeatmapLayerRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var HeatmapLayerRenderer
@@ -32,7 +32,7 @@ class HeatmapLayerRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->heatmapLayerRenderer = new HeatmapLayerRenderer(new Formatter(), new JsonBuilder());
     }

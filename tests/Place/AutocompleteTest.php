@@ -21,7 +21,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AutocompleteTest extends \PHPUnit_Framework_TestCase
+class AutocompleteTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Autocomplete
@@ -31,7 +31,7 @@ class AutocompleteTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->autocomplete = new Autocomplete();
     }

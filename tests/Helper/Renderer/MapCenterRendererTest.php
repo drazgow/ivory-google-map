@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Map;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MapCenterRendererTest extends \PHPUnit_Framework_TestCase
+class MapCenterRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MapCenterRenderer
@@ -29,7 +29,7 @@ class MapCenterRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->mapCenterRenderer = new MapCenterRenderer(new Formatter());
     }

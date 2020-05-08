@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Map;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class CustomControlCollectorTest extends \PHPUnit_Framework_TestCase
+class CustomControlCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var CustomControlCollector
@@ -29,7 +29,7 @@ class CustomControlCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->customControlCollector = new CustomControlCollector();
     }

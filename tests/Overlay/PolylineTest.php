@@ -22,7 +22,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PolylineTest extends \PHPUnit_Framework_TestCase
+class PolylineTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Polyline
@@ -32,7 +32,7 @@ class PolylineTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->polyline = new Polyline();
     }

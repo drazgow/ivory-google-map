@@ -23,7 +23,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ZoomControlRendererTest extends \PHPUnit_Framework_TestCase
+class ZoomControlRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ZoomControlRenderer
@@ -33,7 +33,7 @@ class ZoomControlRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->zoomControlRenderer = new ZoomControlRenderer(
             $formatter = new Formatter(),

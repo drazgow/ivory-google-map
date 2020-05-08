@@ -16,7 +16,7 @@ use Ivory\GoogleMap\Service\Base\AddressComponent;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AddressComponentTest extends \PHPUnit_Framework_TestCase
+class AddressComponentTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AddressComponent
@@ -26,7 +26,7 @@ class AddressComponentTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->address = new AddressComponent();
     }

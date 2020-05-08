@@ -19,7 +19,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AutocompleteContainerRendererTest extends \PHPUnit_Framework_TestCase
+class AutocompleteContainerRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AutocompleteContainerRenderer
@@ -29,7 +29,7 @@ class AutocompleteContainerRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->autocompleteContainerRenderer = new AutocompleteContainerRenderer(new Formatter(), new JsonBuilder());
     }

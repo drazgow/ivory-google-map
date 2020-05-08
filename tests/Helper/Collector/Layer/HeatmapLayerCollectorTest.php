@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Map;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class HeatmapLayerCollectorTest extends \PHPUnit_Framework_TestCase
+class HeatmapLayerCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var HeatmapLayerCollector
@@ -28,7 +28,7 @@ class HeatmapLayerCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->heatmapLayerCollector = new HeatmapLayerCollector();
     }

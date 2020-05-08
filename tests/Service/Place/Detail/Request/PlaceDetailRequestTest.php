@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Service\RequestInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceDetailRequestTest extends \PHPUnit_Framework_TestCase
+class PlaceDetailRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PlaceDetailRequest
@@ -33,7 +33,7 @@ class PlaceDetailRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = new PlaceDetailRequest($this->placeId = 'place');
     }

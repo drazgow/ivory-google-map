@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\Direction\Response\Transit\DirectionTransitStop;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DirectionTransitDetailsTest extends \PHPUnit_Framework_TestCase
+class DirectionTransitDetailsTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DirectionTransitDetails
@@ -29,7 +29,7 @@ class DirectionTransitDetailsTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->transitDetails = new DirectionTransitDetails();
     }

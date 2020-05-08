@@ -21,7 +21,7 @@ use Ivory\GoogleMap\Service\Direction\Response\DirectionStatus;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DirectionResponseTest extends \PHPUnit_Framework_TestCase
+class DirectionResponseTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DirectionResponse
@@ -31,7 +31,7 @@ class DirectionResponseTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->response = new DirectionResponse();
     }

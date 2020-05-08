@@ -23,7 +23,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DefaultInfoWindowRendererTest extends \PHPUnit_Framework_TestCase
+class DefaultInfoWindowRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DefaultInfoWindowRenderer|\PHPUnit_Framework_MockObject_MockObject
@@ -33,7 +33,7 @@ class DefaultInfoWindowRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->defaultInfoWindowRenderer = new DefaultInfoWindowRenderer(new Formatter(), new JsonBuilder());
     }

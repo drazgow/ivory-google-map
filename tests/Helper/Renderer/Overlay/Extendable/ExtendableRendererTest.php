@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Overlay\ExtendableInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ExtendableRendererTest extends \PHPUnit_Framework_TestCase
+class ExtendableRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ExtendableRenderer
@@ -29,7 +29,7 @@ class ExtendableRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->extendableRenderer = new ExtendableRenderer();
     }

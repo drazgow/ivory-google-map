@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Overlay\EncodedPolyline;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class EncodedPolylineRendererTest extends \PHPUnit_Framework_TestCase
+class EncodedPolylineRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var EncodedPolylineRenderer
@@ -30,7 +30,7 @@ class EncodedPolylineRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->encodedPolylineRenderer = new EncodedPolylineRenderer(
             new EncodedPolylineStyleRenderer(),

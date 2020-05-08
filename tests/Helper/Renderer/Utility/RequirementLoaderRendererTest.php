@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Helper\Renderer\Utility\RequirementLoaderRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class RequirementLoaderRendererTest extends \PHPUnit_Framework_TestCase
+class RequirementLoaderRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RequirementLoaderRenderer
@@ -28,7 +28,7 @@ class RequirementLoaderRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->requirementLoaderRenderer = new RequirementLoaderRenderer(new Formatter());
     }

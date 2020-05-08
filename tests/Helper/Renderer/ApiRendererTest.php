@@ -23,7 +23,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ApiRendererTest extends \PHPUnit_Framework_TestCase
+class ApiRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ApiRenderer
@@ -33,7 +33,7 @@ class ApiRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->apiRenderer = new ApiRenderer(
             $formatter = new Formatter(),

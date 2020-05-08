@@ -21,7 +21,7 @@ use Ivory\GoogleMap\Overlay\ExtendableInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class HeatmapLayerExtendableRendererTest extends \PHPUnit_Framework_TestCase
+class HeatmapLayerExtendableRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var HeatmapLayerExtendableRenderer
@@ -31,7 +31,7 @@ class HeatmapLayerExtendableRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->heatmapLayerExtendableRenderer = new HeatmapLayerExtendableRenderer(new Formatter());
     }

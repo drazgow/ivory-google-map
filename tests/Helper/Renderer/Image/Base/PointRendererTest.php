@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Helper\Renderer\Image\Base\PointRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PointRendererTest extends \PHPUnit_Framework_TestCase
+class PointRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PointRenderer
@@ -27,7 +27,7 @@ class PointRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->pointRenderer = new PointRenderer();
     }

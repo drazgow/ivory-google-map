@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class IconTest extends \PHPUnit_Framework_TestCase
+class IconTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Icon
@@ -29,7 +29,7 @@ class IconTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->icon = new Icon();
     }

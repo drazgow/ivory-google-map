@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Base\Location\LocationInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AddressLocationTest extends \PHPUnit_Framework_TestCase
+class AddressLocationTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AddressLocation
@@ -32,7 +32,7 @@ class AddressLocationTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->addressLocation = new AddressLocation($this->address = 'address');
     }

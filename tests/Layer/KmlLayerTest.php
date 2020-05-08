@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Utility\OptionsAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class KmlLayerTest extends \PHPUnit_Framework_TestCase
+class KmlLayerTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var KmlLayer
@@ -33,7 +33,7 @@ class KmlLayerTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->kmlLayer = new KmlLayer($this->url = 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml');
     }

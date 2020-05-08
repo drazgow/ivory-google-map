@@ -21,7 +21,7 @@ use Ivory\GoogleMap\Overlay\ExtendableInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PathExtendableRendererTest extends \PHPUnit_Framework_TestCase
+class PathExtendableRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PathExtendableRenderer
@@ -31,7 +31,7 @@ class PathExtendableRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->pathExtendableRenderer = new PathExtendableRenderer(new Formatter());
     }

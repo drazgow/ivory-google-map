@@ -27,7 +27,7 @@ use Ivory\GoogleMap\Overlay\Rectangle;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class OverlayManagerTest extends \PHPUnit_Framework_TestCase
+class OverlayManagerTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var OverlayManager
@@ -47,7 +47,7 @@ class OverlayManagerTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->bound = $this->createBoundMock();
         $this->map = $this->createMapMock($this->bound);

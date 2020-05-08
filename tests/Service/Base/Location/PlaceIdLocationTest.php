@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Base\Location\PlaceIdLocation;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceIdLocationTest extends \PHPUnit_Framework_TestCase
+class PlaceIdLocationTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PlaceIdLocation
@@ -32,7 +32,7 @@ class PlaceIdLocationTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->placeIdLocation = new PlaceIdLocation($this->placeId = 'place');
     }

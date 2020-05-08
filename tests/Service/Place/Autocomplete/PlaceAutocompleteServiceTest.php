@@ -38,7 +38,7 @@ class PlaceAutocompleteServiceTest extends AbstractPlaceSerializableServiceTest
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         if (!isset($_SERVER['API_KEY'])) {
             $this->markTestSkipped();

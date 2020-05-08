@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Service\Place\Photo\Request\PlacePhotoRequest;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlacePhotoServiceTest extends \PHPUnit_Framework_TestCase
+class PlacePhotoServiceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PlacePhotoService
@@ -33,7 +33,7 @@ class PlacePhotoServiceTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->service = new PlacePhotoService();
         $this->service->setKey($this->key = 'foo');

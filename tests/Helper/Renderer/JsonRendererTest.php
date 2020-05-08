@@ -19,7 +19,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class JsonRendererTest extends \PHPUnit_Framework_TestCase
+class JsonRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AbstractJsonRenderer|\PHPUnit_Framework_MockObject_MockObject
@@ -39,7 +39,7 @@ class JsonRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->formatter = $this->createFormatterMock();
         $this->jsonBuilder = $this->createJsonBuilderMock();

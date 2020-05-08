@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Helper\Renderer\Control\MapTypeControlStyleRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MapTypeControlStyleRendererTest extends \PHPUnit_Framework_TestCase
+class MapTypeControlStyleRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MapTypeControlStyleRenderer
@@ -29,7 +29,7 @@ class MapTypeControlStyleRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->mapTypeControlStyleRenderer = new MapTypeControlStyleRenderer(new Formatter());
     }

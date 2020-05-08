@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Place\Search\Request\AbstractTextualPlaceSearchReque
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class TextualPlaceSearchRequestTest extends\PHPUnit_Framework_TestCase
+class TextualPlaceSearchRequestTest extends\PHPUnit\Framework\TestCase
 {
     /**
      * @var AbstractTextualPlaceSearchRequest|\PHPUnit_Framework_MockObject_MockObject
@@ -27,7 +27,7 @@ class TextualPlaceSearchRequestTest extends\PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = $this->createRequestMock();
     }

@@ -22,7 +22,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MarkerClustererRendererTest extends \PHPUnit_Framework_TestCase
+class MarkerClustererRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MarkerClustererRenderer
@@ -32,7 +32,7 @@ class MarkerClustererRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->markerClustererRenderer = new MarkerClustererRenderer(
             $formatter = new Formatter(),

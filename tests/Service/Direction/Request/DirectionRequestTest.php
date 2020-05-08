@@ -26,7 +26,7 @@ use Ivory\GoogleMap\Service\RequestInterface;
 /**
  * @author GeLo <gelon.eric@gmail.com>
  */
-class DirectionRequestTest extends \PHPUnit_Framework_TestCase
+class DirectionRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DirectionRequest
@@ -46,7 +46,7 @@ class DirectionRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = new DirectionRequest(
             $this->origin = $this->createLocationMock('origin'),

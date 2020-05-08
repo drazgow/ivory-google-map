@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Helper\Renderer\Control\ZoomControlStyleRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ZoomControlStyleRendererTest extends \PHPUnit_Framework_TestCase
+class ZoomControlStyleRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ZoomControlStyleRenderer
@@ -28,7 +28,7 @@ class ZoomControlStyleRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->zoomControlStyleRenderer = new ZoomControlStyleRenderer(new Formatter());
     }

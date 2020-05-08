@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Overlay\Animation;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AnimationRendererTest extends \PHPUnit_Framework_TestCase
+class AnimationRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AnimationRenderer
@@ -29,7 +29,7 @@ class AnimationRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->animationRenderer = new AnimationRenderer(new Formatter());
     }

@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Control\FullscreenControl;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class FullscreenControlTest extends \PHPUnit_Framework_TestCase
+class FullscreenControlTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var FullscreenControl
@@ -27,7 +27,7 @@ class FullscreenControlTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->fullscreenControl = new FullscreenControl();
     }

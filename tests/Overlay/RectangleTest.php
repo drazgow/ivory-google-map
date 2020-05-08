@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class RectangleTest extends \PHPUnit_Framework_TestCase
+class RectangleTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Rectangle
@@ -35,7 +35,7 @@ class RectangleTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->rectangle = new Rectangle($this->bound = $this->createBoundMock());
     }

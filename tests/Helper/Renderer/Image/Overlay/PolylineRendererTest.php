@@ -22,7 +22,7 @@ use Ivory\GoogleMap\Overlay\Polyline;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PolylineRendererTest extends \PHPUnit_Framework_TestCase
+class PolylineRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PolylineRenderer
@@ -32,7 +32,7 @@ class PolylineRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->polylineRenderer = new PolylineRenderer(
             new PolylineStyleRenderer(),

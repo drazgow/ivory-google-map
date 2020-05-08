@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Base\Location\LocationInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class EncodedPolylineLocationTest extends \PHPUnit_Framework_TestCase
+class EncodedPolylineLocationTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var EncodedPolylineLocation
@@ -32,7 +32,7 @@ class EncodedPolylineLocationTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->encodedPolylineLocation = new EncodedPolylineLocation($this->encodedPolyline = 'value');
     }

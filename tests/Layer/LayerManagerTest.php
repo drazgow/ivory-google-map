@@ -21,7 +21,7 @@ use Ivory\GoogleMap\Map;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class LayerManagerTest extends \PHPUnit_Framework_TestCase
+class LayerManagerTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var LayerManager
@@ -41,7 +41,7 @@ class LayerManagerTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->bound = $this->createBoundMock();
         $this->map = $this->createMapMock($this->bound);

@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class CoordinateTest extends \PHPUnit_Framework_TestCase
+class CoordinateTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Coordinate
@@ -27,7 +27,7 @@ class CoordinateTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->coordinate = new Coordinate();
     }

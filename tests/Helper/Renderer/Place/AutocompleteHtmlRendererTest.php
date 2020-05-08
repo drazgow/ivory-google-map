@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Place\Autocomplete;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AutocompleteHtmlRendererTest extends \PHPUnit_Framework_TestCase
+class AutocompleteHtmlRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AutocompleteHtmlRenderer
@@ -30,7 +30,7 @@ class AutocompleteHtmlRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->autocompleteHtmlRenderer = new AutocompleteHtmlRenderer(
             $formatter = new Formatter(),

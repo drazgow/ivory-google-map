@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class SymbolTest extends \PHPUnit_Framework_TestCase
+class SymbolTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Symbol
@@ -35,7 +35,7 @@ class SymbolTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->symbol = new Symbol($this->path = SymbolPath::CIRCLE);
     }

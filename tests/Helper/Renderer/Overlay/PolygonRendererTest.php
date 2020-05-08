@@ -22,7 +22,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PolygonRendererTest extends \PHPUnit_Framework_TestCase
+class PolygonRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PolygonRenderer
@@ -32,7 +32,7 @@ class PolygonRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->polygonRenderer = new PolygonRenderer(new Formatter(), new JsonBuilder());
     }

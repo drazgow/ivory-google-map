@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Overlay\Circle;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class CircleCollectorTest extends \PHPUnit_Framework_TestCase
+class CircleCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var CircleCollector
@@ -29,7 +29,7 @@ class CircleCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->circleCollector = new CircleCollector();
     }

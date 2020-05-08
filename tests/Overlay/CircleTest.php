@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class CircleTest extends \PHPUnit_Framework_TestCase
+class CircleTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \Ivory\GoogleMap\Overlay\Circle
@@ -35,7 +35,7 @@ class CircleTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->circle = new Circle($this->center = $this->createCoordinateMock());
     }

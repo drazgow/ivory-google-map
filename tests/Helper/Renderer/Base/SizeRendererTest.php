@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Helper\Renderer\Base\SizeRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class SizeRendererTest extends \PHPUnit_Framework_TestCase
+class SizeRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var SizeRenderer
@@ -29,7 +29,7 @@ class SizeRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->sizeRenderer = new SizeRenderer(new Formatter());
     }

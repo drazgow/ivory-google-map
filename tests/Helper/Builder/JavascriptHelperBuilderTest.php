@@ -19,7 +19,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class JavascriptHelperBuilderTest extends \PHPUnit_Framework_TestCase
+class JavascriptHelperBuilderTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AbstractJavascriptHelperBuilder
@@ -29,7 +29,7 @@ class JavascriptHelperBuilderTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->helperBuilder = $this->createAbstractJavascriptHelperBuilder();
     }

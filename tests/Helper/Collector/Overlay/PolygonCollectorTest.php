@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Overlay\Polygon;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PolygonCollectorTest extends \PHPUnit_Framework_TestCase
+class PolygonCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PolygonCollector
@@ -28,7 +28,7 @@ class PolygonCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->polygonCollector = new PolygonCollector();
     }

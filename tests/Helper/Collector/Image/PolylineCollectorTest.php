@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Overlay\Polyline;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PolylineCollectorTest extends \PHPUnit_Framework_TestCase
+class PolylineCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PolylineCollector
@@ -28,7 +28,7 @@ class PolylineCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->polylineCollector = new PolylineCollector();
     }

@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Place\Base\PlaceScope;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AlternatePlaceIdTest extends \PHPUnit_Framework_TestCase
+class AlternatePlaceIdTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AlternatePlaceId
@@ -27,7 +27,7 @@ class AlternatePlaceIdTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->alternatePlaceId = new AlternatePlaceId();
     }

@@ -22,7 +22,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class RotateControlRendererTest extends \PHPUnit_Framework_TestCase
+class RotateControlRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RotateControlRenderer
@@ -32,7 +32,7 @@ class RotateControlRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->rotateControlRenderer = new RotateControlRenderer(
             $formatter = new Formatter(),

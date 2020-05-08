@@ -22,7 +22,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class FullscreenControlRendererTest extends \PHPUnit_Framework_TestCase
+class FullscreenControlRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var FullscreenControlRenderer
@@ -32,7 +32,7 @@ class FullscreenControlRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->fullscreenControlRenderer = new FullscreenControlRenderer(
             $formatter = new Formatter(),

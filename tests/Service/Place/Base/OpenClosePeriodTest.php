@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Place\Base\OpenClosePeriod;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class OpenClosePeriodTest extends \PHPUnit_Framework_TestCase
+class OpenClosePeriodTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var OpenClosePeriod
@@ -27,7 +27,7 @@ class OpenClosePeriodTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->openClosePeriod = new OpenClosePeriod();
     }

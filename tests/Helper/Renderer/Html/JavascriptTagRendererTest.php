@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Helper\Renderer\Html\TagRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class JavascriptTagRendererTest extends \PHPUnit_Framework_TestCase
+class JavascriptTagRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var JavascriptTagRenderer
@@ -29,7 +29,7 @@ class JavascriptTagRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->javascriptTagRenderer = new JavascriptTagRenderer(
             $formatter = new Formatter(),

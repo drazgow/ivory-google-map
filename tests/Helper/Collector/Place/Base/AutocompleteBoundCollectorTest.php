@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Place\Autocomplete;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AutocompleteBoundCollectorTest extends \PHPUnit_Framework_TestCase
+class AutocompleteBoundCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AutocompleteBoundCollector
@@ -28,7 +28,7 @@ class AutocompleteBoundCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->autocompleteBoundCollector = new AutocompleteBoundCollector();
     }

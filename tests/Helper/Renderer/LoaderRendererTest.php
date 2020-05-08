@@ -19,7 +19,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class LoaderRendererTest extends \PHPUnit_Framework_TestCase
+class LoaderRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var LoaderRenderer
@@ -29,7 +29,7 @@ class LoaderRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->loaderRenderer = new LoaderRenderer(new Formatter(), new JsonBuilder());
     }

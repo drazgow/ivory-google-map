@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Map;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class GeoJsonLayerCollectorTest extends \PHPUnit_Framework_TestCase
+class GeoJsonLayerCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var GeoJsonLayerCollector
@@ -28,7 +28,7 @@ class GeoJsonLayerCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->geoJsonLayerCollector = new GeoJsonLayerCollector();
     }

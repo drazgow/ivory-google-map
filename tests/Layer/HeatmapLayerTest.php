@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Utility\OptionsAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class HeatmapLayerTest extends \PHPUnit_Framework_TestCase
+class HeatmapLayerTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var HeatmapLayer
@@ -29,7 +29,7 @@ class HeatmapLayerTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->heatmapLayer = new HeatmapLayer();
     }

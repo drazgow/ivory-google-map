@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\RequestInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PositionalElevationRequestTest extends \PHPUnit_Framework_TestCase
+class PositionalElevationRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PositionalElevationRequest
@@ -34,7 +34,7 @@ class PositionalElevationRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->locations = [$this->createLocationMock('first'), $this->createLocationMock('second')];
 

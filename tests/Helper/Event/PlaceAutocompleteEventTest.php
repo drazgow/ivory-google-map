@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Place\Autocomplete;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceAutocompleteEventTest extends \PHPUnit_Framework_TestCase
+class PlaceAutocompleteEventTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PlaceAutocompleteEvent
@@ -33,7 +33,7 @@ class PlaceAutocompleteEventTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->autocomplete = $this->createAutocompleteMock();
         $this->placeAutocompleteEvent = new PlaceAutocompleteEvent($this->autocomplete);

@@ -16,7 +16,7 @@ use Ivory\GoogleMap\Service\Place\Base\Photo;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PhotoTest extends \PHPUnit_Framework_TestCase
+class PhotoTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Photo
@@ -26,7 +26,7 @@ class PhotoTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->photo = new Photo();
     }

@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Helper\Renderer\Control\ScaleControlStyleRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ScaleControlStyleRendererTest extends \PHPUnit_Framework_TestCase
+class ScaleControlStyleRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ScaleControlStyleRenderer
@@ -29,7 +29,7 @@ class ScaleControlStyleRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->scaleControlStyleRenderer = new ScaleControlStyleRenderer(new Formatter());
     }

@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Place\Base\Review;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ReviewTest extends \PHPUnit_Framework_TestCase
+class ReviewTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Review
@@ -27,7 +27,7 @@ class ReviewTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->review = new Review();
     }

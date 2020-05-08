@@ -22,7 +22,7 @@ use Ivory\GoogleMap\Service\Direction\Response\DirectionWaypoint;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DirectionLegTest extends \PHPUnit_Framework_TestCase
+class DirectionLegTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DirectionLeg
@@ -32,7 +32,7 @@ class DirectionLegTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->leg = new DirectionLeg();
     }

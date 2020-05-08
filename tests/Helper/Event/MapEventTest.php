@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Map;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MapEventTest extends \PHPUnit_Framework_TestCase
+class MapEventTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MapEvent
@@ -33,7 +33,7 @@ class MapEventTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->map = $this->createMapMock();
         $this->mapEvent = new MapEvent($this->map);

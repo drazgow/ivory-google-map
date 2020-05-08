@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Map;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class EventOnceCollectorTest extends \PHPUnit_Framework_TestCase
+class EventOnceCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var EventOnceCollector
@@ -28,7 +28,7 @@ class EventOnceCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->eventOnceCollector = new EventOnceCollector();
     }

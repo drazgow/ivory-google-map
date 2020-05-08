@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Helper\Renderer\Html\TagRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AbstractTagRendererTest extends \PHPUnit_Framework_TestCase
+class AbstractTagRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AbstractTagRenderer|\PHPUnit_Framework_MockObject_MockObject
@@ -34,7 +34,7 @@ class AbstractTagRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->innerTagRenderer = $this->createTagRendererMock();
         $this->tagRenderer = $this->createAbstractTagRendererMock($this->innerTagRenderer);

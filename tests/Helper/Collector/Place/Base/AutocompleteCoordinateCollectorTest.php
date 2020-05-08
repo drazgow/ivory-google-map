@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Place\Autocomplete;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AutocompleteCoordinateCollectorTest extends \PHPUnit_Framework_TestCase
+class AutocompleteCoordinateCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AutocompleteCoordinateCollector
@@ -30,7 +30,7 @@ class AutocompleteCoordinateCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->autocompleteCoordinateCollector = new AutocompleteCoordinateCollector(new AutocompleteBoundCollector());
     }

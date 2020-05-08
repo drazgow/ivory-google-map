@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Helper\Renderer\Event\AbstractEventRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AbstractEventRendererTest extends\PHPUnit_Framework_TestCase
+class AbstractEventRendererTest extends\PHPUnit\Framework\TestCase
 {
     /**
      * @var AbstractEventRenderer|\\PHPUnit_Framework_MockObject_MockObject
@@ -29,7 +29,7 @@ class AbstractEventRendererTest extends\PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->eventRenderer = $this->createAbstractEventRendererMock();
     }

@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Control\StreetViewControl;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class StreetViewControlTest extends \PHPUnit_Framework_TestCase
+class StreetViewControlTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var StreetViewControl
@@ -27,7 +27,7 @@ class StreetViewControlTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->streetViewControl = new StreetViewControl();
     }

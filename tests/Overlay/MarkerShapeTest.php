@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MarkerShapeTest extends \PHPUnit_Framework_TestCase
+class MarkerShapeTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MarkerShape
@@ -38,7 +38,7 @@ class MarkerShapeTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->markerShape = new MarkerShape(
             $this->type = MarkerShapeType::CIRCLE,

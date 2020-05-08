@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Direction\Request\DirectionWaypoint;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DirectionWaypointTest extends \PHPUnit_Framework_TestCase
+class DirectionWaypointTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DirectionWaypoint
@@ -32,7 +32,7 @@ class DirectionWaypointTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->location = $this->createLocationMock();
         $this->waypoint = new DirectionWaypoint($this->location);

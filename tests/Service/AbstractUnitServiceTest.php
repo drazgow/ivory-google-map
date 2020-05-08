@@ -22,7 +22,7 @@ use Psr\Http\Message\StreamInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-abstract class AbstractUnitServiceTest extends \PHPUnit_Framework_TestCase
+abstract class AbstractUnitServiceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var HttpClient|\PHPUnit_Framework_MockObject_MockObject
@@ -42,7 +42,7 @@ abstract class AbstractUnitServiceTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->client = $this->createHttpClientMock();
         $this->messageFactory = $this->createMessageFactoryMock();

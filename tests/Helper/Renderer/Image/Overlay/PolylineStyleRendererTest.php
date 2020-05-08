@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Overlay\Polyline;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PolylineStyleRendererTest extends \PHPUnit_Framework_TestCase
+class PolylineStyleRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PolylineStyleRenderer
@@ -28,7 +28,7 @@ class PolylineStyleRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->polylineStyleRenderer = new PolylineStyleRenderer();
     }

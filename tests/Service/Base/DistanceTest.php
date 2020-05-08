@@ -16,7 +16,7 @@ use Ivory\GoogleMap\Service\Base\Distance;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DistanceTest extends \PHPUnit_Framework_TestCase
+class DistanceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Distance
@@ -36,7 +36,7 @@ class DistanceTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->distance = new Distance($this->value = 2.3, $this->text = 'foo');
     }

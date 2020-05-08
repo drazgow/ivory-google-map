@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\Elevation\Response\ElevationStatus;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ElevationResponseTest extends \PHPUnit_Framework_TestCase
+class ElevationResponseTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ElevationResponse
@@ -29,7 +29,7 @@ class ElevationResponseTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->response = new ElevationResponse();
     }

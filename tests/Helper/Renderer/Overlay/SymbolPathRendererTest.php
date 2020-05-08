@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Overlay\SymbolPath;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class SymbolPathRendererTest extends \PHPUnit_Framework_TestCase
+class SymbolPathRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var SymbolPathRenderer
@@ -29,7 +29,7 @@ class SymbolPathRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->symbolPathRenderer = new SymbolPathRenderer(new Formatter());
     }

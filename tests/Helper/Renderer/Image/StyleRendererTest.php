@@ -16,7 +16,7 @@ use Ivory\GoogleMap\Helper\Renderer\Image\StyleRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class StyleRendererTest extends \PHPUnit_Framework_TestCase
+class StyleRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var StyleRenderer
@@ -26,7 +26,7 @@ class StyleRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->styleRenderer = new StyleRenderer();
     }

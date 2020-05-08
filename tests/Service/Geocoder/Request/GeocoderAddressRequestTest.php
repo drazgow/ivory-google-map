@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Service\Geocoder\Request\GeocoderComponentType;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class GeocoderAddressRequestTest extends \PHPUnit_Framework_TestCase
+class GeocoderAddressRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var GeocoderAddressRequest
@@ -35,7 +35,7 @@ class GeocoderAddressRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = new GeocoderAddressRequest($this->address = 'Lille');
     }

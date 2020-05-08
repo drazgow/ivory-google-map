@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Service\Direction\Response\DirectionRoute;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DirectionRouteTest extends \PHPUnit_Framework_TestCase
+class DirectionRouteTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DirectionRoute
@@ -30,7 +30,7 @@ class DirectionRouteTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->route = new DirectionRoute();
     }

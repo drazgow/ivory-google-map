@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\Place\Search\Request\PlaceSearchRankBy;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class NearbyPlaceSearchRequestTest extends \PHPUnit_Framework_TestCase
+class NearbyPlaceSearchRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var NearbyPlaceSearchRequest
@@ -39,7 +39,7 @@ class NearbyPlaceSearchRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = new NearbyPlaceSearchRequest(
             $this->location = $this->createCoordinateMock(),

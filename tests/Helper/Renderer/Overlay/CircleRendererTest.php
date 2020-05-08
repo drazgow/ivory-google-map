@@ -22,7 +22,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class CircleRendererTest extends \PHPUnit_Framework_TestCase
+class CircleRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var CircleRenderer
@@ -32,7 +32,7 @@ class CircleRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->circleRenderer = new CircleRenderer(new Formatter(), new JsonBuilder());
     }

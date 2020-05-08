@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Helper\Renderer\Utility\CallbackRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class CallbackRendererTest extends \PHPUnit_Framework_TestCase
+class CallbackRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var CallbackRenderer
@@ -28,7 +28,7 @@ class CallbackRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->callbackRenderer = new CallbackRenderer(new Formatter());
     }

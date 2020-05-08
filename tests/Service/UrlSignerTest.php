@@ -16,7 +16,7 @@ use Ivory\GoogleMap\Service\UrlSigner;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class UrlSignerTest extends \PHPUnit_Framework_TestCase
+class UrlSignerTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @param string      $expected

@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\Place\Search\Response\PlaceSearchResponseIterator;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceSearchResponseIteratorTest extends \PHPUnit_Framework_TestCase
+class PlaceSearchResponseIteratorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PlaceSearchResponseIterator
@@ -39,7 +39,7 @@ class PlaceSearchResponseIteratorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->iterator = new PlaceSearchResponseIterator(
             $this->service = $this->createServiceMock(),

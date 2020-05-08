@@ -21,7 +21,7 @@ use Ivory\GoogleMap\Overlay\ExtendableInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PositionExtendableRendererTest extends \PHPUnit_Framework_TestCase
+class PositionExtendableRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PositionExtendableRenderer
@@ -31,7 +31,7 @@ class PositionExtendableRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->positionExtendableRenderer = new PositionExtendableRenderer(new Formatter());
     }

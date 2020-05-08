@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Helper\Renderer\Html\TagRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class TagRendererTest extends \PHPUnit_Framework_TestCase
+class TagRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var TagRenderer
@@ -28,7 +28,7 @@ class TagRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->tagRenderer = new TagRenderer(new Formatter());
     }

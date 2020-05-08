@@ -24,7 +24,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AutocompleteRendererTest extends\PHPUnit_Framework_TestCase
+class AutocompleteRendererTest extends\PHPUnit\Framework\TestCase
 {
     /**
      * @var AutocompleteRenderer
@@ -34,7 +34,7 @@ class AutocompleteRendererTest extends\PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->autocompleteRenderer = new AutocompleteRenderer(
             $formatter = new Formatter(),

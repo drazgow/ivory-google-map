@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Helper\Renderer\Control\ControlPositionRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ControlPositionRendererTest extends \PHPUnit_Framework_TestCase
+class ControlPositionRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ControlPositionRenderer
@@ -29,7 +29,7 @@ class ControlPositionRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->controlPositionRenderer = new ControlPositionRenderer(new Formatter());
     }

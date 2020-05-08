@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Overlay\Marker;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MarkerLocationRendererTest extends \PHPUnit_Framework_TestCase
+class MarkerLocationRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MarkerLocationRenderer
@@ -30,7 +30,7 @@ class MarkerLocationRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->markerLocationRenderer = new MarkerLocationRenderer(new CoordinateRenderer());
     }

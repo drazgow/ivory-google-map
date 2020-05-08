@@ -21,7 +21,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class KmlLayerRendererTest extends \PHPUnit_Framework_TestCase
+class KmlLayerRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var KmlLayerRenderer
@@ -31,7 +31,7 @@ class KmlLayerRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->kmlLayerRenderer = new KmlLayerRenderer(new Formatter(), new JsonBuilder());
     }

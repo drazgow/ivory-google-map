@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceAutocompleteHelperBuilderTest extends \PHPUnit_Framework_TestCase
+class PlaceAutocompleteHelperBuilderTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PlaceAutocompleteHelperBuilder
@@ -28,7 +28,7 @@ class PlaceAutocompleteHelperBuilderTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->placeAutocompleteHelperBuilder = PlaceAutocompleteHelperBuilder::create();
     }

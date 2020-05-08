@@ -21,7 +21,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class GeoJsonLayerRendererTest extends \PHPUnit_Framework_TestCase
+class GeoJsonLayerRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var GeoJsonLayerRenderer
@@ -31,7 +31,7 @@ class GeoJsonLayerRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->geoJsonLayerRenderer = new GeoJsonLayerRenderer(new Formatter(), new JsonBuilder());
     }

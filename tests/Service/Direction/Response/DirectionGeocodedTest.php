@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Service\Direction\Response\DirectionGeocodedType;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DirectionGeocodedTest extends \PHPUnit_Framework_TestCase
+class DirectionGeocodedTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DirectionGeocoded
@@ -28,7 +28,7 @@ class DirectionGeocodedTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->geocodedWaypoint = new DirectionGeocoded();
     }

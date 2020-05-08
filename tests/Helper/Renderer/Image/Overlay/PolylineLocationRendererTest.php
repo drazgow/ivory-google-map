@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Overlay\Polyline;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PolylineLocationRendererTest extends \PHPUnit_Framework_TestCase
+class PolylineLocationRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PolylineLocationRenderer
@@ -30,7 +30,7 @@ class PolylineLocationRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->polylineLocationRenderer = new PolylineLocationRenderer(new CoordinateRenderer());
     }

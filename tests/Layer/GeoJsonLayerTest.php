@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Utility\OptionsAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class GeoJsonLayerTest extends \PHPUnit_Framework_TestCase
+class GeoJsonLayerTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var GeoJsonLayer
@@ -32,7 +32,7 @@ class GeoJsonLayerTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->geoJsonLayer = new GeoJsonLayer($this->url = 'https://storage.googleapis.com/mapsdevsite/json/google.json');
     }

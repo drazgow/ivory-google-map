@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Place\Base\Period;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PeriodTest extends \PHPUnit_Framework_TestCase
+class PeriodTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Period
@@ -27,7 +27,7 @@ class PeriodTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->period = new Period();
     }

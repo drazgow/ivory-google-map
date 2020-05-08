@@ -26,7 +26,7 @@ use Ivory\GoogleMap\Overlay\SymbolPath;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class SymbolCollectorTest extends \PHPUnit_Framework_TestCase
+class SymbolCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var SymbolCollector
@@ -36,7 +36,7 @@ class SymbolCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->symbolCollector = new SymbolCollector(
             new MarkerCollector(),

@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Service\Base\Location\LocationInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class CoordinateLocationTest extends \PHPUnit_Framework_TestCase
+class CoordinateLocationTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var CoordinateLocation
@@ -33,7 +33,7 @@ class CoordinateLocationTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->coordinate = $this->createCoordinateMock();
         $this->coordinateLocation = new CoordinateLocation($this->coordinate);

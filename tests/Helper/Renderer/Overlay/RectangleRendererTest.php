@@ -22,7 +22,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class RectangleRendererTest extends \PHPUnit_Framework_TestCase
+class RectangleRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RectangleRenderer
@@ -32,7 +32,7 @@ class RectangleRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->rectangleRenderer = new RectangleRenderer(new Formatter(), new JsonBuilder());
     }

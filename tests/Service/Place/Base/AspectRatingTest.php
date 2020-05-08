@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Place\Base\AspectRatingType;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AspectRatingTest extends \PHPUnit_Framework_TestCase
+class AspectRatingTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AspectRating
@@ -27,7 +27,7 @@ class AspectRatingTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->aspectRating = new AspectRating();
     }

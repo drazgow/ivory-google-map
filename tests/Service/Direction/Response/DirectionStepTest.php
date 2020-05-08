@@ -22,7 +22,7 @@ use Ivory\GoogleMap\Service\Direction\Response\Transit\DirectionTransitDetails;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DirectionStepTest extends \PHPUnit_Framework_TestCase
+class DirectionStepTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DirectionStep
@@ -32,7 +32,7 @@ class DirectionStepTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->step = new DirectionStep();
     }

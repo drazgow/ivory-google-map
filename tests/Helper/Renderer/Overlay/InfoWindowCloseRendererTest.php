@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Overlay\InfoWindow;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class InfoWindowCloseRendererTest extends \PHPUnit_Framework_TestCase
+class InfoWindowCloseRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var InfoWindowCloseRenderer
@@ -29,7 +29,7 @@ class InfoWindowCloseRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->infoWindowCloseRenderer = new InfoWindowCloseRenderer(new Formatter());
     }

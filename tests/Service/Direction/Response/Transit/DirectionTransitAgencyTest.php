@@ -16,7 +16,7 @@ use Ivory\GoogleMap\Service\Direction\Response\Transit\DirectionTransitAgency;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DirectionTransitAgencyTest extends \PHPUnit_Framework_TestCase
+class DirectionTransitAgencyTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DirectionTransitAgency
@@ -26,7 +26,7 @@ class DirectionTransitAgencyTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->transitAgency = new DirectionTransitAgency();
     }

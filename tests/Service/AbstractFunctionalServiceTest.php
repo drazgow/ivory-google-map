@@ -28,7 +28,7 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-abstract class AbstractFunctionalServiceTest extends \PHPUnit_Framework_TestCase
+abstract class AbstractFunctionalServiceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Journal
@@ -53,7 +53,7 @@ abstract class AbstractFunctionalServiceTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         if (self::$journal === null) {
             self::$journal = new Journal();
@@ -63,7 +63,7 @@ abstract class AbstractFunctionalServiceTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         if (isset($_SERVER['CACHE_RESET']) && $_SERVER['CACHE_RESET']) {
             sleep(2);

@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Place\Autocomplete\Request\PlaceAutocompleteQueryReq
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceAutocompleteQueryRequestTest extends \PHPUnit_Framework_TestCase
+class PlaceAutocompleteQueryRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PlaceAutocompleteQueryRequest
@@ -32,7 +32,7 @@ class PlaceAutocompleteQueryRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = new PlaceAutocompleteQueryRequest($this->input = 'input');
     }

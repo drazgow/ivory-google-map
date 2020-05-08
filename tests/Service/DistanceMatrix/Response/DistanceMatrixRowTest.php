@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\DistanceMatrix\Response\DistanceMatrixRow;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DistanceMatrixRowTest extends \PHPUnit_Framework_TestCase
+class DistanceMatrixRowTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DistanceMatrixRow
@@ -27,7 +27,7 @@ class DistanceMatrixRowTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->row = new DistanceMatrixRow();
     }

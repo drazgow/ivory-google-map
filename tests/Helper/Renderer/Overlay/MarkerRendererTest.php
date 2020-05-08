@@ -29,7 +29,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MarkerRendererTest extends \PHPUnit_Framework_TestCase
+class MarkerRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MarkerRenderer
@@ -39,7 +39,7 @@ class MarkerRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->markerRenderer = new MarkerRenderer(
             $formatter = new Formatter(),

@@ -27,7 +27,7 @@ use Ivory\GoogleMap\Service\RequestInterface;
 /**
  * @author GeLo <gelon.eric@gmail.com>
  */
-class DistanceMatrixRequestTest extends \PHPUnit_Framework_TestCase
+class DistanceMatrixRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DistanceMatrixRequest
@@ -47,7 +47,7 @@ class DistanceMatrixRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = new DistanceMatrixRequest(
             $this->origins = [new AddressLocation('Paris')],

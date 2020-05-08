@@ -21,7 +21,7 @@ use Ivory\GoogleMap\Map;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MapHtmlRendererTest extends \PHPUnit_Framework_TestCase
+class MapHtmlRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MapHtmlRenderer
@@ -31,7 +31,7 @@ class MapHtmlRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->mapHtmlRenderer = new MapHtmlRenderer(
             $formatter = new Formatter(),

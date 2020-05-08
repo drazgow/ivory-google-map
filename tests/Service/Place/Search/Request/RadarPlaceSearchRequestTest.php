@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Service\Place\Search\Request\RadarPlaceSearchRequest;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class RadarPlaceSearchRequestTest extends \PHPUnit_Framework_TestCase
+class RadarPlaceSearchRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var RadarPlaceSearchRequest
@@ -38,7 +38,7 @@ class RadarPlaceSearchRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = new RadarPlaceSearchRequest(
             $this->location = $this->createCoordinateMock(),

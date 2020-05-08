@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Control\CustomControl;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class CustomControlTest extends \PHPUnit_Framework_TestCase
+class CustomControlTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var CustomControl
@@ -37,7 +37,7 @@ class CustomControlTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->customControl = new CustomControl(
             $this->position = ControlPosition::TOP_CENTER,

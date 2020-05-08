@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Overlay\ExtendableInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ExtendableCollectorTest extends \PHPUnit_Framework_TestCase
+class ExtendableCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ExtendableCollector
@@ -28,7 +28,7 @@ class ExtendableCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->extendableCollector = new ExtendableCollector();
     }

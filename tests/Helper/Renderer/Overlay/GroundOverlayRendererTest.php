@@ -22,7 +22,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class GroundOverlayRendererTest extends \PHPUnit_Framework_TestCase
+class GroundOverlayRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var GroundOverlayRenderer
@@ -32,7 +32,7 @@ class GroundOverlayRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->groundOverlayRenderer = new GroundOverlayRenderer(new Formatter(), new JsonBuilder());
     }

@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Overlay\InfoWindowType;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class InfoBoxCollectorTest extends \PHPUnit_Framework_TestCase
+class InfoBoxCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var InfoBoxCollector
@@ -28,7 +28,7 @@ class InfoBoxCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->infoBoxCollector = new InfoBoxCollector(new MarkerCollector());
     }

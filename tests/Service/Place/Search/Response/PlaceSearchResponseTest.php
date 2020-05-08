@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\Place\Search\Response\PlaceSearchStatus;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceSearchResponseTest extends \PHPUnit_Framework_TestCase
+class PlaceSearchResponseTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PlaceSearchResponse
@@ -29,7 +29,7 @@ class PlaceSearchResponseTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->response = new PlaceSearchResponse();
     }

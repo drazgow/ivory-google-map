@@ -25,7 +25,7 @@ use Ivory\GoogleMap\Service\Place\Base\Review;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceTest extends \PHPUnit_Framework_TestCase
+class PlaceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Place
@@ -35,7 +35,7 @@ class PlaceTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->result = new Place();
     }

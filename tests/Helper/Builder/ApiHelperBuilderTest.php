@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Helper\Builder\ApiHelperBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ApiHelperBuilderTest extends \PHPUnit_Framework_TestCase
+class ApiHelperBuilderTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var ApiHelperBuilder
@@ -28,7 +28,7 @@ class ApiHelperBuilderTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->apiHelperBuilder = ApiHelperBuilder::create();
     }

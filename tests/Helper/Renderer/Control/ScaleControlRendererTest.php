@@ -23,7 +23,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ScaleControlRendererTest extends\PHPUnit_Framework_TestCase
+class ScaleControlRendererTest extends\PHPUnit\Framework\TestCase
 {
     /**
      * @var ScaleControlRenderer
@@ -33,7 +33,7 @@ class ScaleControlRendererTest extends\PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->scaleControlRenderer = new ScaleControlRenderer(
             $formatter = new Formatter(),

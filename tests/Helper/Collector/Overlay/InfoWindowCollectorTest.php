@@ -22,7 +22,7 @@ use Ivory\GoogleMap\Overlay\Marker;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class InfoWindowCollectorTest extends \PHPUnit_Framework_TestCase
+class InfoWindowCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var InfoWindowCollector
@@ -32,7 +32,7 @@ class InfoWindowCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->infoWindowCollector = new InfoWindowCollector(new MarkerCollector());
     }

@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Helper\Renderer\ApiInitRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ApiInitRendererTest extends\PHPUnit_Framework_TestCase
+class ApiInitRendererTest extends\PHPUnit\Framework\TestCase
 {
     /**
      * @var ApiInitRenderer
@@ -28,7 +28,7 @@ class ApiInitRendererTest extends\PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->apiInitRenderer = new ApiInitRenderer(new Formatter());
     }

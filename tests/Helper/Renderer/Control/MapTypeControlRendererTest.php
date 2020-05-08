@@ -24,7 +24,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MapTypeControlRendererTest extends \PHPUnit_Framework_TestCase
+class MapTypeControlRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MapTypeControlRenderer
@@ -34,7 +34,7 @@ class MapTypeControlRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->mapTypeControlRenderer = new MapTypeControlRenderer(
             $formatter = new Formatter(),

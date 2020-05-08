@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Helper\Renderer\Geometry\EncodingRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class EncodingRendererTest extends \PHPUnit_Framework_TestCase
+class EncodingRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var EncodingRenderer
@@ -28,7 +28,7 @@ class EncodingRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->encodingRenderer = new EncodingRenderer(new Formatter());
     }

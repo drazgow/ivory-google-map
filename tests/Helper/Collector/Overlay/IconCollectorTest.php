@@ -21,7 +21,7 @@ use Ivory\GoogleMap\Overlay\Marker;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class IconCollectorTest extends \PHPUnit_Framework_TestCase
+class IconCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var IconCollector
@@ -31,7 +31,7 @@ class IconCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->iconCollector = new IconCollector(new MarkerCollector());
     }

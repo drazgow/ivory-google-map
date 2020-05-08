@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\Geocoder\Response\GeocoderStatus;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class GeocoderResponseTest extends \PHPUnit_Framework_TestCase
+class GeocoderResponseTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var GeocoderResponse
@@ -29,7 +29,7 @@ class GeocoderResponseTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->response = new GeocoderResponse();
     }

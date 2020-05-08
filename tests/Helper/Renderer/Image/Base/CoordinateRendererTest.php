@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Helper\Renderer\Image\Base\CoordinateRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class CoordinateRendererTest extends \PHPUnit_Framework_TestCase
+class CoordinateRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var CoordinateRenderer
@@ -27,7 +27,7 @@ class CoordinateRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->coordinateRenderer = new CoordinateRenderer();
     }

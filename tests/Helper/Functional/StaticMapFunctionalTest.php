@@ -36,7 +36,7 @@ use Symfony\Component\Cache\Adapter\FilesystemAdapter;
  *
  * @group functional
  */
-class StaticMapFunctionalTest extends \PHPUnit_Framework_TestCase
+class StaticMapFunctionalTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var StaticMapHelper
@@ -61,7 +61,7 @@ class StaticMapFunctionalTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         if (!isset($_SERVER['API_KEY'])) {
             $this->markTestSkipped();

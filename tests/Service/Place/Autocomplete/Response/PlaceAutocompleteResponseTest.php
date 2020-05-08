@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\Place\Autocomplete\Response\PlaceAutocompleteStatus;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceAutocompleteResponseTest extends \PHPUnit_Framework_TestCase
+class PlaceAutocompleteResponseTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PlaceAutocompleteResponse
@@ -29,7 +29,7 @@ class PlaceAutocompleteResponseTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->response = new PlaceAutocompleteResponse();
     }

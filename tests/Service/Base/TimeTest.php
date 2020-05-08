@@ -16,7 +16,7 @@ use Ivory\GoogleMap\Service\Base\Time;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class TimeTest extends \PHPUnit_Framework_TestCase
+class TimeTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Time
@@ -41,7 +41,7 @@ class TimeTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->time = new Time(
             $this->value = new \DateTime(),

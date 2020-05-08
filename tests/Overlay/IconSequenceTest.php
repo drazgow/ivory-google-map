@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class IconSequenceTest extends \PHPUnit_Framework_TestCase
+class IconSequenceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var IconSequence
@@ -34,7 +34,7 @@ class IconSequenceTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->iconSequence = new IconSequence($this->symbol = $this->createSymbolMock());
     }

@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Service\RequestInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AbstractPlaceAutocompleteRequestTest extends \PHPUnit_Framework_TestCase
+class AbstractPlaceAutocompleteRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AbstractPlaceAutocompleteRequest|\PHPUnit_Framework_MockObject_MockObject
@@ -35,7 +35,7 @@ class AbstractPlaceAutocompleteRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = $this->getMockBuilder(AbstractPlaceAutocompleteRequest::class)
             ->setConstructorArgs([$this->input = 'input'])

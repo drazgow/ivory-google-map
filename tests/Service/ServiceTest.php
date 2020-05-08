@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\BusinessAccount;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AbstractService|\PHPUnit_Framework_MockObject_MockObject
@@ -32,7 +32,7 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->service = $this->getMockBuilder(AbstractService::class)
             ->setConstructorArgs([$this->url = 'https://foo'])

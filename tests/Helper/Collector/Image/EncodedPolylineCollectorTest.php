@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Overlay\EncodedPolyline;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class EncodedPolylineCollectorTest extends \PHPUnit_Framework_TestCase
+class EncodedPolylineCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var EncodedPolylineCollector
@@ -28,7 +28,7 @@ class EncodedPolylineCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->encodedPolylineCollector = new EncodedPolylineCollector();
     }

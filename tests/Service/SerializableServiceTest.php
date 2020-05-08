@@ -21,7 +21,7 @@ use Ivory\Serializer\SerializerInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class SerializableServiceTest extends \PHPUnit_Framework_TestCase
+class SerializableServiceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AbstractSerializableService|\PHPUnit_Framework_MockObject_MockObject
@@ -51,7 +51,7 @@ class SerializableServiceTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->service = $this->getMockBuilder(AbstractSerializableService::class)
             ->setConstructorArgs([

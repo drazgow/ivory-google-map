@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\Place\Autocomplete\Response\PlaceAutocompleteTerm;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceAutocompletePredictionTest extends \PHPUnit_Framework_TestCase
+class PlaceAutocompletePredictionTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PlaceAutocompletePrediction
@@ -29,7 +29,7 @@ class PlaceAutocompletePredictionTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->prediction = new PlaceAutocompletePrediction();
     }

@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class GroundOverlayTest extends \PHPUnit_Framework_TestCase
+class GroundOverlayTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var GroundOverlay
@@ -40,7 +40,7 @@ class GroundOverlayTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->groundOverlay = new GroundOverlay(
             $this->url = 'https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',

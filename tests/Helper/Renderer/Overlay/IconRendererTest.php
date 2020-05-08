@@ -22,7 +22,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class IconRendererTest extends \PHPUnit_Framework_TestCase
+class IconRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var IconRenderer
@@ -32,7 +32,7 @@ class IconRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->iconRenderer = new IconRenderer(new Formatter(), new JsonBuilder());
     }

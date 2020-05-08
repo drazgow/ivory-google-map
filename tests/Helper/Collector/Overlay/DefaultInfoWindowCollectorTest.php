@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Overlay\InfoWindowType;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DefaultInfoWindowCollectorTest extends \PHPUnit_Framework_TestCase
+class DefaultInfoWindowCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DefaultInfoWindowCollector
@@ -28,7 +28,7 @@ class DefaultInfoWindowCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->defaultInfoWindowCollector = new DefaultInfoWindowCollector(new MarkerCollector());
     }

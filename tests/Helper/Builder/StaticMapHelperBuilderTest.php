@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Helper\StaticMapHelper;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class StaticMapHelperBuilderTest extends \PHPUnit_Framework_TestCase
+class StaticMapHelperBuilderTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var StaticMapHelperBuilder
@@ -28,7 +28,7 @@ class StaticMapHelperBuilderTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->staticMapHelperBuilder = StaticMapHelperBuilder::create();
     }

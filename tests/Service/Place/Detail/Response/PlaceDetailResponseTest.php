@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\Place\Detail\Response\PlaceDetailStatus;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceDetailResponseTest extends \PHPUnit_Framework_TestCase
+class PlaceDetailResponseTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PlaceDetailResponse
@@ -29,7 +29,7 @@ class PlaceDetailResponseTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->response = new PlaceDetailResponse();
     }

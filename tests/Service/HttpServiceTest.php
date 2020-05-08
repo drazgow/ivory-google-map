@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\AbstractService;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class HttpServiceTest extends \PHPUnit_Framework_TestCase
+class HttpServiceTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AbstractHttpService|\PHPUnit_Framework_MockObject_MockObject
@@ -44,7 +44,7 @@ class HttpServiceTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->service = $this->getMockBuilder(AbstractHttpService::class)
             ->setConstructorArgs([

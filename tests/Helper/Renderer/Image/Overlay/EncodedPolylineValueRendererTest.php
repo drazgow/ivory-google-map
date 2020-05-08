@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Overlay\EncodedPolyline;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class EncodedPolylineValueRendererTest extends \PHPUnit_Framework_TestCase
+class EncodedPolylineValueRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var EncodedPolylineValueRenderer
@@ -28,7 +28,7 @@ class EncodedPolylineValueRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->encodedPolylineValueRenderer = new EncodedPolylineValueRenderer();
     }

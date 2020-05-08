@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Service\TimeZone\Response\TimeZoneStatus;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class TimeZoneResponseTest extends \PHPUnit_Framework_TestCase
+class TimeZoneResponseTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var TimeZoneResponse
@@ -28,7 +28,7 @@ class TimeZoneResponseTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->response = new TimeZoneResponse();
     }

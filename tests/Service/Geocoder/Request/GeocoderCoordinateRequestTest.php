@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Service\Geocoder\Request\GeocoderCoordinateRequest;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class GeocoderCoordinateRequestTest extends \PHPUnit_Framework_TestCase
+class GeocoderCoordinateRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var GeocoderCoordinateRequest
@@ -33,7 +33,7 @@ class GeocoderCoordinateRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = new GeocoderCoordinateRequest($this->coordinate = $this->createCoordinateMock());
     }

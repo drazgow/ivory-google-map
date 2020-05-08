@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\RequestInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PathElevationRequestTest extends \PHPUnit_Framework_TestCase
+class PathElevationRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PathElevationRequest
@@ -34,7 +34,7 @@ class PathElevationRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->paths = [$this->createLocationMock('first'), $this->createLocationMock('second')];
 

@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Service\Geocoder\Response\GeocoderResult;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class GeocoderResultTest extends \PHPUnit_Framework_TestCase
+class GeocoderResultTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var GeocoderResult
@@ -28,7 +28,7 @@ class GeocoderResultTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->result = new GeocoderResult();
     }

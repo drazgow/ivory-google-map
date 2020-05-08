@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class FormatterTest extends \PHPUnit_Framework_TestCase
+class FormatterTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Formatter
@@ -27,7 +27,7 @@ class FormatterTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->formatter = new Formatter();
     }

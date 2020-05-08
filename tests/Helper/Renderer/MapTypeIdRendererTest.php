@@ -18,7 +18,7 @@ use Ivory\GoogleMap\MapTypeId;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MapTypeIdRendererTest extends \PHPUnit_Framework_TestCase
+class MapTypeIdRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MapTypeIdRenderer
@@ -28,7 +28,7 @@ class MapTypeIdRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->mapTypeIdRenderer = new MapTypeIdRenderer(new Formatter());
     }

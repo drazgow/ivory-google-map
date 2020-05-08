@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\Base\GeometryLocationType;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class GeometryTest extends \PHPUnit_Framework_TestCase
+class GeometryTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Geometry
@@ -29,7 +29,7 @@ class GeometryTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->geometry = new Geometry();
     }

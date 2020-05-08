@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Utility\StaticOptionsAwareTrait;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class StaticOptionsAwareTest extends \PHPUnit_Framework_TestCase
+class StaticOptionsAwareTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var StaticOptionsAwareTrait
@@ -27,7 +27,7 @@ class StaticOptionsAwareTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->staticOptionsAware = new StaticOptionsAwareMock();
     }

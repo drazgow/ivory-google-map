@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Service\Direction\Response\Transit\DirectionTransitVehicle;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DirectionTransitLineTest extends \PHPUnit_Framework_TestCase
+class DirectionTransitLineTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DirectionTransitLine
@@ -28,7 +28,7 @@ class DirectionTransitLineTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->transitLine = new DirectionTransitLine();
     }

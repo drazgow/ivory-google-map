@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\TimeZone\Request\TimeZoneRequestInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class TimeZoneRequestTest extends \PHPUnit_Framework_TestCase
+class TimeZoneRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var TimeZoneRequest
@@ -39,7 +39,7 @@ class TimeZoneRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = new TimeZoneRequest(
             $this->location = $this->createCoordinateMock(),

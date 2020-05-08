@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Helper\Renderer\AbstractRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class RendererTest extends \PHPUnit_Framework_TestCase
+class RendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AbstractRenderer
@@ -32,7 +32,7 @@ class RendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->formatter = $this->createFormatterMock();
         $this->renderer = $this->createAbstractRendererMock($this->formatter);

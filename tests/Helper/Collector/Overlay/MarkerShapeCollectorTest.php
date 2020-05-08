@@ -22,7 +22,7 @@ use Ivory\GoogleMap\Overlay\MarkerShapeType;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MarkerShapeCollectorTest extends \PHPUnit_Framework_TestCase
+class MarkerShapeCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MarkerShapeCollector
@@ -32,7 +32,7 @@ class MarkerShapeCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->markerShapeCollector = new MarkerShapeCollector(new MarkerCollector());
     }

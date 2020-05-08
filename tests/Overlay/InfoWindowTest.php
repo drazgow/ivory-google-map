@@ -23,7 +23,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class InfoWindowTest extends \PHPUnit_Framework_TestCase
+class InfoWindowTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var InfoWindow
@@ -38,7 +38,7 @@ class InfoWindowTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->infoWindow = new InfoWindow($this->content = '<p>content</p>');
     }

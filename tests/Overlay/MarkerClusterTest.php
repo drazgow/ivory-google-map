@@ -23,7 +23,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MarkerClusterTest extends \PHPUnit_Framework_TestCase
+class MarkerClusterTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MarkerCluster
@@ -48,7 +48,7 @@ class MarkerClusterTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->bound = $this->createBoundMock();
         $this->map = $this->createMapMock($this->bound);

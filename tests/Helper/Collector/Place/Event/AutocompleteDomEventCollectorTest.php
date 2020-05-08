@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Place\Autocomplete;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class AutocompleteDomEventCollectorTest extends \PHPUnit_Framework_TestCase
+class AutocompleteDomEventCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var AutocompleteDomEventCollector
@@ -28,7 +28,7 @@ class AutocompleteDomEventCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->domEventCollector = new AutocompleteDomEventCollector();
     }

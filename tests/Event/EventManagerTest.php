@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Event\EventManager;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class EventManagerTest extends \PHPUnit_Framework_TestCase
+class EventManagerTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var EventManager
@@ -27,7 +27,7 @@ class EventManagerTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->eventManager = new EventManager();
     }

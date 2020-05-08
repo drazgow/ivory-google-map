@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Service\RequestInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PageTokenPlaceSearchRequestTest extends \PHPUnit_Framework_TestCase
+class PageTokenPlaceSearchRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PageTokenPlaceSearchRequest
@@ -35,7 +35,7 @@ class PageTokenPlaceSearchRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = new PageTokenPlaceSearchRequest($this->response = $this->createResponseMock());
     }

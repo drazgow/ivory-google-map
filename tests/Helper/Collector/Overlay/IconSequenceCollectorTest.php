@@ -22,7 +22,7 @@ use Ivory\GoogleMap\Overlay\SymbolPath;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class IconSequenceCollectorTest extends \PHPUnit_Framework_TestCase
+class IconSequenceCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var IconSequenceCollector
@@ -32,7 +32,7 @@ class IconSequenceCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->iconSequenceCollector = new IconSequenceCollector(new PolylineCollector());
     }

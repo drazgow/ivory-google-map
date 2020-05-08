@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Utility\VariableAwareTrait;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class VariableAwareTest extends \PHPUnit_Framework_TestCase
+class VariableAwareTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var VariableAwareTrait
@@ -27,7 +27,7 @@ class VariableAwareTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->variableAware = new VariableAwareMock();
     }

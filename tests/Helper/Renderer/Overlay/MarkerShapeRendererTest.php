@@ -21,7 +21,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MarkerShapeRendererTest extends \PHPUnit_Framework_TestCase
+class MarkerShapeRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var MarkerShapeRenderer
@@ -31,7 +31,7 @@ class MarkerShapeRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->markerShapeRenderer = new MarkerShapeRenderer(new Formatter(), new JsonBuilder());
     }

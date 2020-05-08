@@ -18,7 +18,7 @@ use Ivory\GoogleMap\Map;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class KmlLayerCollectorTest extends \PHPUnit_Framework_TestCase
+class KmlLayerCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var KmlLayerCollector
@@ -28,7 +28,7 @@ class KmlLayerCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->kmlLayerCollector = new KmlLayerCollector();
     }

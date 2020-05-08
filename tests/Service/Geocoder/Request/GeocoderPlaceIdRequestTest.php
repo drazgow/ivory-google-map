@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Service\Geocoder\Request\GeocoderPlaceIdRequest;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class GeocoderPlaceIdRequestTest extends \PHPUnit_Framework_TestCase
+class GeocoderPlaceIdRequestTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var GeocoderPlaceIdRequest
@@ -32,7 +32,7 @@ class GeocoderPlaceIdRequestTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->request = new GeocoderPlaceIdRequest($this->placeId = 'ChIJLU7jZClu5kcR4PcOOO6p3I0');
     }

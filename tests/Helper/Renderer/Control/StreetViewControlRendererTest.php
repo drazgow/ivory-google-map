@@ -22,7 +22,7 @@ use Ivory\JsonBuilder\JsonBuilder;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class StreetViewControlRendererTest extends \PHPUnit_Framework_TestCase
+class StreetViewControlRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var StreetViewControlRenderer
@@ -32,7 +32,7 @@ class StreetViewControlRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->streetViewControlRenderer = new StreetViewControlRenderer(
             $formatter = new Formatter(),

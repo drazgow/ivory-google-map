@@ -22,7 +22,7 @@ use Ivory\GoogleMap\Overlay\Rectangle;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class BoundCollectorTest extends \PHPUnit_Framework_TestCase
+class BoundCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var BoundCollector
@@ -32,7 +32,7 @@ class BoundCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->boundCollector = new BoundCollector(new GroundOverlayCollector(), new RectangleCollector());
     }

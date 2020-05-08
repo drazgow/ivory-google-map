@@ -16,7 +16,7 @@ use Ivory\GoogleMap\Service\Place\Autocomplete\Response\PlaceAutocompleteTerm;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceAutocompleteTermTest extends\PHPUnit_Framework_TestCase
+class PlaceAutocompleteTermTest extends\PHPUnit\Framework\TestCase
 {
     /**
      * @var PlaceAutocompleteTerm
@@ -26,7 +26,7 @@ class PlaceAutocompleteTermTest extends\PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->match = new PlaceAutocompleteTerm();
     }

@@ -20,7 +20,7 @@ use Ivory\GoogleMap\Helper\Renderer\Html\TagRenderer;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class StylesheetTagRendererTest extends \PHPUnit_Framework_TestCase
+class StylesheetTagRendererTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var StylesheetTagRenderer
@@ -30,7 +30,7 @@ class StylesheetTagRendererTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->stylesheetTagRenderer = new StylesheetTagRenderer(
             $formatter = new Formatter(),

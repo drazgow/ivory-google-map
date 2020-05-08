@@ -17,7 +17,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PointTest extends \PHPUnit_Framework_TestCase
+class PointTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Point
@@ -27,7 +27,7 @@ class PointTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->point = new Point();
     }

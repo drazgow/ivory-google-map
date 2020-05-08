@@ -19,7 +19,7 @@ use Ivory\GoogleMap\Service\DistanceMatrix\Response\DistanceMatrixStatus;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class DistanceMatrixResponseTest extends \PHPUnit_Framework_TestCase
+class DistanceMatrixResponseTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var DistanceMatrixResponse
@@ -29,7 +29,7 @@ class DistanceMatrixResponseTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->response = new DistanceMatrixResponse();
     }

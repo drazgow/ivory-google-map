@@ -22,7 +22,7 @@ use Ivory\GoogleMap\Overlay\Marker;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PointCollectorTest extends \PHPUnit_Framework_TestCase
+class PointCollectorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var PointCollector
@@ -32,7 +32,7 @@ class PointCollectorTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->pointCollector = new PointCollector(new MarkerCollector());
     }

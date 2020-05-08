@@ -24,7 +24,7 @@ use Ivory\GoogleMap\Utility\VariableAwareInterface;
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class MapTest extends \PHPUnit_Framework_TestCase
+class MapTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var Map
@@ -34,7 +34,7 @@ class MapTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp():void
     {
         $this->map = new Map();
     }
