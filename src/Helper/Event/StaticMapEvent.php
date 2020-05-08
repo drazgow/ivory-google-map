@@ -12,7 +12,7 @@
 namespace Ivory\GoogleMap\Helper\Event;
 
 use Ivory\GoogleMap\Map;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Component\EventDispatcher\EventDispatcher as Event;
 
 /**
  * @author GeLo <geloen.eric@gmail.com>
@@ -35,6 +35,7 @@ class StaticMapEvent extends Event
      */
     public function __construct(Map $map, array $parameters = [])
     {
+        parent::__construct();
         $this->map = $map;
         $this->setParameters($parameters);
     }
