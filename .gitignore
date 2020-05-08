@@ -11,3 +11,6 @@
 # PHPUnit
 /phpunit.xml
 /build
+.idea
+.cache
+.phpunit.result.cache
